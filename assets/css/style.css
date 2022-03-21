@@ -701,15 +701,13 @@
 		-o-box-shadow: -10px 9px #5e0000;
 	}
 
-	div#stats
-	{
-		height: 130px;
+	div#stats{
+		height: 240px;
 		width: 280px;
 		padding: 10px;
 		background-color: #30da0c;
 		z-index: 1;
-		font-size: 13px;
-		/* font-family: arial, sans-serif; */
+		font-size: 15px;
 		font-family: 'Segoe UI';
 
 		position: absolute;
@@ -732,7 +730,7 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 295px;
+		top: 410px;
 		left: 49px;
 	}
 
@@ -741,7 +739,7 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 335px;
+		top: 455px;
 		left: 49px;
 	}
 
@@ -776,7 +774,7 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 385px;
+		top: 505px;
 		left: 210px;
 
 		border-radius: 100px;
@@ -802,7 +800,7 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 385px;
+		top: 505px;
 		left: 270px;
 
 		border-radius: 100px;
@@ -829,7 +827,7 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 383px;
+		top: 505px;
 		left: 25px;
 
 		box-shadow: 0 0 10px #214900;
@@ -856,7 +854,7 @@
 		z-index: 1;
 
 		position: absolute;
-		top: 383px;
+		top: 505px;
 		left: 51px;
 
 		box-shadow: 0 0 10px #490000;
@@ -875,48 +873,10 @@
 		background: -o-radial-gradient(#0abd0a, #057b05);
 	}
 
-	div#yellowBox1
-	{
-		width: 140px;
-		height: 70px;
-		z-index: 1;
-		background-color: #ffff00;
-
-		position: absolute;
-		top: 415px;
-		left: 25px;
-
-		border-radius: 15px;
-		-webkit-border-radius: 15px;
-		-moz-border-radius: 15px;
-		-o-border-radius: 15px;
-
-		box-shadow: 0 0 20px #ff6600 inset;
-		-webkit-box-shadow: 0 0 20px #ff6600 inset;
-		-moz-box-shadow: 0 0 20px #ff6600 inset;
-		-o-box-shadow: 0 0 20px #ff6600 inset;
-	}
-
-	div#yellowBox2
-	{
-		width: 140px;
-		height: 70px;
-		z-index: 1;
-		background-color: #ffff00;
-
-		position: absolute;
-		top: 415px;
-		left: 185px;
-
-		border-radius: 15px;
-		-webkit-border-radius: 15px;
-		-moz-border-radius: 15px;
-		-o-border-radius: 15px;
-
-		box-shadow: 0 0 20px #ff6600 inset;
-		-webkit-box-shadow: 0 0 20px #ff6600 inset;
-		-moz-box-shadow: 0 0 20px #ff6600 inset;
-		-o-box-shadow: 0 0 20px #ff6600 inset;
+	div#stats #statsP{
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		padding-left: 10px;
 	}
 
 }
@@ -926,18 +886,6 @@
 	div#pokedex
 	{
 		width: 400px;
-	}
-
-	div#logo
-	{
-		width: 281px;
-		height: 99px;
-		background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/200653/logo.png') no-repeat left top;
-		z-index: 1;
-
-		position: absolute;
-		top: 220px;
-		left: 30px;
 	}
 
 	div#left
@@ -995,10 +943,30 @@
 		-o-border-top-left-radius: 30px;
 	}
 
-	/* div#right, div#screen, div#bigbluebutton, div#barbutton1, div#barbutton2, div#cross */
-	div#right, div#screen, button#bigbluebutton, div#barbutton1, div#barbutton2, div#cross
+	#blueButtons1, #blueButtons2, #miniButtonGlass4, #miniButtonGlass5, #barbutton3, #barbutton4,
+	#bg_curve1_right, #bg_curve2_right, #curve1_right, #curve2_right
 	{
 		display: none;
 	}
 
+	div#curve2_left {
+		height: 800px;
+		bottom: -330px;
+	}
+
+	div#stats{
+		top: 45px;
+	}
+
+	div#bg_curve2_left {
+		height: 750px;
+	}
+	div#junction {
+		height: 800px;
+	}
+
+	div#junction1 {
+		margin-top: 160px;
+		margin-bottom: 390px;
+	}
 }
